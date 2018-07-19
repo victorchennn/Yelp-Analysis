@@ -10,14 +10,15 @@ _zip = zip
 def help_directory(filename):
     """Create a directory called 'dataset' and put the zip file in it."""
     dataset_directory = os.path.join(os.getcwd(), 'dataset')
-    os.mkdir(dataset_directory)
-    current_directory = os.path.join(os.getcwd(), filename)
-    moveto_directory = os.path.join(dataset_directory, filename)
-    os.rename(current_directory, moveto_directory)
+    if not os.path.exists(dataset_directory):
+        os.mkdir(dataset_directory)
+        current_directory = os.path.join(os.getcwd(), filename)
+        moveto_directory = os.path.join(dataset_directory, filename)
+        os.rename(current_directory, moveto_directory)
 
-    """Extract all the files."""
-    my_zip = zipfile.ZipFile(moveto_directory, 'r')
-    my_zip.extractall(dataset_directory)
+        """Extract all the files."""
+        my_zip = zipfile.ZipFile(moveto_directory, 'r')
+        my_zip.extractall(dataset_directory)
 
 def tolist(path):
     """Append directory to a list."""
@@ -32,7 +33,7 @@ def load_file(path):
     return map(json.loads, tolist(path))
 
 def load_las_vegas_rest(path):
-    """Create restaurant object."""
+    """Create restaurant objects."""
     with open(path) as file:
         restaurant_data = [json.loads(obj) for obj in file]
     bus_to_rest = {}
@@ -54,6 +55,7 @@ def distance(pos1, pos2):
 
 def mean(s):
     """Returns the arithmetic mean of a sequence of numbers s."""
+    assert len(s) != 0
     return sum(s) / len(s)
 
 def zip(*sequences):
