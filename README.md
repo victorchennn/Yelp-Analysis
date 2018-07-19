@@ -32,7 +32,7 @@ is written for.
 [Here]( https://www.yelp.com/dataset/documentation/json) are the introductions of all the json files.
 
 ### Google API Key
-In this project we need to use google maps, which needs a Google API key to access Google maps. This key tells Google who you are, presumably so it can keep track of rate limits and such things. To create an API key, follow the [instructions](http://jupyter-gmaps.readthedocs.io/en/latest/authentication.html) in the documentation. Once you have an API key, pass it to gmaps before creating widgets:
+In this project we need to use google maps, which needs a Google API key to access it. This key tells Google who you are, presumably so it can keep track of rate limits and such things. To create an API key, follow the [instructions](http://jupyter-gmaps.readthedocs.io/en/latest/authentication.html) in the documentation. Once you have an API key, pass it to gmaps before creating widgets:
 ```
 gmaps.configure(api_key="AI...")
 ```
