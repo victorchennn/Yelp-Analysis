@@ -1,6 +1,6 @@
 # Yelp-Analysis
 
-<img src="Yelp_RGB_fullcolor_outline.png" width="100">
+<img src="images/Yelp_RGB_fullcolor_outline.png" width="100">
 
 ### Introduction
 [**Yelp**](https://en.wikipedia.org/wiki/Yelp) is a `crowd-sourced review` forum, as well as an American multinational corporation headquartered in San Francisco, 
