@@ -21,13 +21,12 @@ by a legitimate customer.
 Yelp has released part of their data to raise an activity called 
 [Yelp Dataset Challenge](https://www.yelp.com/dataset/challenge), which offers a chance for people to conduct research 
 or analysis and discover what insights lie hidden in their data. Due to the size of data, this project only chooses 
-yelp data partially in a zip file called **'dataset.zip'**, which contains four json files including:
+yelp data partially in a zip file called **'dataset.zip'**, which contains three json files including:
 
 - **business.json** - Contains business data including location data, attributes, and categories.
 - **user.json** - User data including the user's friend mapping and all the metadata associated with the user.
 - **review.json** - Contains full review text data including the user_id that wrote the review and the business_id the review 
 is written for.
-- **photos.json** - This file is formatted as a JSON list of objects.
 
 [Here]( https://www.yelp.com/dataset/documentation/json) are the introductions of all the json files.
 
