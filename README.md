@@ -19,7 +19,7 @@ by a legitimate customer.
 
 ### Yelp Dataset
 Yelp has released part of their data to raise an activity called 
-[Yelp Dataset Challenge](https://www.yelp.com/dataset/challenge), which offers a chance for people to conduct research 
+[Yelp Dataset Challenge](https://www.yelp.com/dataset), which offers a chance for people to conduct research 
 or analysis and discover what insights lie hidden in their data. Due to the size of data, this project only chooses 
 yelp data partially in a zip file called **'dataset.zip'**, which contains three json files including:
 
@@ -28,7 +28,7 @@ yelp data partially in a zip file called **'dataset.zip'**, which contains three
 - **review.json** - Contains full review text data including the user_id that wrote the review and the business_id the review 
 is written for.
 
-[Here]( https://www.yelp.com/dataset/documentation/json) are the introductions of all the json files.
+[Here](https://www.yelp.com/dataset/documentation/main) are the introductions of all the json files.
 
 ### Google API Key
 In this project we need to use google maps, which needs a Google API key to access it. This key tells Google who you are, presumably so it can keep track of rate limits and such things. To create an API key, follow the [instructions](http://jupyter-gmaps.readthedocs.io/en/latest/authentication.html) in the documentation. Once you have an API key, pass it to gmaps before creating widgets:
